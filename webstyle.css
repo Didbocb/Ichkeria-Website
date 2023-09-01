@@ -1,0 +1,261 @@
+/* Reset default margin and padding */
+body, h1, h2, p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set background color and font styles for the whole page */
+body {
+  background-color: #90EE90;
+  color: #000;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 85%;
+  margin-left: auto; /* Only specify margin on the left side */
+}
+  
+/* Define the keyframe animation for fade-in */
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Apply the fade-in animation to the image */
+.overlay-image {
+  opacity: 0.5;
+  animation-name: fade-in; /* Name of the keyframe animation */
+  animation-duration: 10s; /* Duration of the animation */
+  animation-timing-function: ease-in-out; /* Timing function for the animation */
+  animation-iteration-count: infinite; /* Number of times the animation repeats (infinite for continuous) */
+}
+
+
+header {
+  text-align: center;
+  margin-bottom: 0; 
+  position: relative; 
+}
+
+.image-container {
+  position: relative; 
+  display: inline-block; 
+  margin-top: -30px; 
+}
+
+/* Set background image for the header */
+.page-1 header::after {
+  content: "";
+  background-image: url('ichkeria-landscape.jpg');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.8; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1; /* Send the background image to the back */
+}
+
+/* Set background image for the header */
+.page-2 header::after {
+  content: "";
+  background-image: url('chechen-history.jpg');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.8; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1; /* Send the background image to the back */
+}
+
+/* Set background image for the header */
+.page-3 header::after {
+  content: "";
+  background-image: url('chechen-culture.jpg'); 
+  background-size: cover;
+  background-position: center;
+  opacity: 0.8; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1; /* Send the background image to the back */
+}
+
+/* Set background image for the header */
+.page-4 header::after {
+  content: "";
+  background-image: url('dudayev.jpg');
+  background-size: cover;
+  background-position: center;
+  opacity: 1; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1; /* Send the background image to the back */
+}
+
+header h1 {
+  font-size: 36px;
+  margin-top: 0;
+  margin-bottom: 0; 
+  position: relative; 
+  z-index: 1; /* Bring the title text to the front */
+  color: #fff; 
+  font-family: 'Georgia', serif; 
+  text-shadow: 5px 5px 5px #273; 
+}
+
+header img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 10px;
+}
+
+.image {
+  display: inline-block; 
+  vertical-align: middle; 
+  align-content: center;
+  max-width: 100%; 
+  height: auto; 
+  margin: 0 auto;
+}
+
+.imageResize {
+  display: block; 
+  margin-left: 250px;
+  margin-right: auto; 
+  max-width: 30%; 
+  height: auto; 
+}
+
+/* Style the navigation bar */
+nav {
+  background-color: rgba(0, 0, 0, 1); 
+  color: #fff;
+  padding: 5px 7px;
+  text-align: center; 
+  position: relative; 
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  display: inline-block;
+  padding: 10px;
+  margin: 2px;
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  background-color: #666;
+}
+
+.content {
+  padding: 50px;
+}
+
+h2 {
+  margin-top: 10px;
+  color: #B22222; /* Red */
+}
+
+p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  letter-spacing: 0.5px;
+  color: #000;
+}
+
+.container, nav ul li a:hover {
+  background-color: #91db9f; /* Green */
+}
+
+nav ul li a {
+  border: 1px solid #fff;
+}
+
+nav ul li a:hover {
+  border: 1px solid #000;
+  background-color: #2E8B57; /* Darker Green */
+}
+
+.table-of-contents {
+  position: sticky;
+  top: 0%; 
+  width: 15%; 
+  float: left; 
+  background-color: rgba(0, 0, 0, 1); 
+  padding: 1px; 
+  box-sizing: border-box; 
+}
+
+.table-of-contents ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.table-of-contents ul li {
+  margin-bottom: 0px;
+  width: 650%; 
+  display: inline-block; 
+  box-sizing: border-box; 
+  text-align: center; 
+}
+
+.table-of-contents ul li:hover a {
+  background-color: #2E8B57;
+  color: #000;
+}
+
+.table-of-contents ul li a {
+  display: block; 
+  padding: 5px;
+  color: #fff;
+  text-decoration: none;
+  white-space: nowrap; 
+  width: 100%;
+}
+
+a {
+  color: #235AA3;
+}
+
+a:hover {
+  color: #ffffff;
+}
+
+footer {
+  background-color: #2E8B57;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
